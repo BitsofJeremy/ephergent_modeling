@@ -118,10 +118,10 @@ def contact():
     logger.info(f"Someone Entered: {name}, \
           {email}, {message}")
     # _res = send_simple_message(name, email, message)
-    if _res:
-        logger.info("Message Sent!")
-    else:
-        logger.info("Something went wrong with message.")
+    # if _res:
+    #     logger.info("Message Sent!")
+    # else:
+    #     logger.info("Something went wrong with message.")
     return redirect(url_for('index'))
 
 
