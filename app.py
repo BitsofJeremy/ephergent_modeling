@@ -117,7 +117,7 @@ def contact():
     message = data['message']
     logger.info(f"Someone Entered: {name}, \
           {email}, {message}")
-    _res = send_simple_message(name, email, message)
+    # _res = send_simple_message(name, email, message)
     if _res:
         logger.info("Message Sent!")
     else:
