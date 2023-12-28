@@ -1,4 +1,2 @@
 # The ephergent modeling site
 
-.
-

@@ -104,6 +104,14 @@ def index():
     )
 
 
+@app.route('/tiiu')
+def tiiu():
+    """
+    Renders Tiiu's model page
+    """
+    return render_template('tiiu.html')
+
+
 @app.route('/contact', methods=['POST'])
 def contact():
     """

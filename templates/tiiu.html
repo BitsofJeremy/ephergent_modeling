@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Lens by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>tiiu</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='tiiu/assets/css/main.css') }}">
+		<noscript>
+			<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='tiiu/assets/css/noscript.css') }}">
+		</noscript>
+   		<script src="https://kit.fontawesome.com/c13d8c9de3.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="is-preload-0 is-preload-1 is-preload-2">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Tiiu</h1>
+						<p>Pronounced: tee-you</p>
+						<p>🇪🇪 Estonian living in Oregon 🥾 Hiking ☕ Coffee 🖼️ photos</p>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/tiiutime/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://ephergent.com/#three" class="icon fa-earth-europe"><span class="label">ephergent</span></a></li>
+<!--							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>-->
+<!--							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>-->
+						</ul>
+					</header>
+				<!-- Thumbnail -->
+<!--				each thumbnail has a link to the full image-->
+<!--				thumnail = 360x225-->
+<!--				full = 1200×750-->
+					<section id="thumbnails">
+<!--						image 1-->
+						<article>
+							<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/01.png') }}" data-position="left center">
+								<img src="{{ url_for('static', filename='tiiu/images/thumbs/01.png') }}" alt="" />
+							</a>
+<!--							<h2>image title</h2>-->
+<!--							<p>image description.</p>-->
+						</article>
+<!--						image 2-->
+						<article>
+							<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/02.png') }}" data-position="left center">
+								<img src="{{ url_for('static', filename='tiiu/images/thumbs/02.png') }}" alt="" />
+							</a>
+<!--							<h2>image title</h2>-->
+<!--							<p>image description.</p>-->
+						</article>
+						<!--						image 3-->
+						<article>
+							<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/03.png') }}" data-position="left center">
+								<img src="{{ url_for('static', filename='tiiu/images/thumbs/03.png') }}" alt="" />
+							</a>
+<!--							<h2>image title</h2>-->
+<!--							<p>image description.</p>-->
+						</article>
+						<!--						image 4-->
+						<article>
+							<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/04.png') }}" data-position="left center">
+								<img src="{{ url_for('static', filename='tiiu/images/thumbs/04.png') }}" alt="" />
+							</a>
+<!--							<h2>image title</h2>-->
+<!--							<p>image description.</p>-->
+						</article>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Ephergent. All rights reserved.</li>
+						</ul>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script type="text/javascript" src="{{ url_for('static', filename='tiiu/assets/js/jquery.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='tiiu/assets/js/browser.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='tiiu/assets/js/breakpoints.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='tiiu/assets/js/main.js') }}"></script>
+	</body>
+</html>

@@ -6,12 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Ephergent Virtual Modeling Agency</title>
+		<title>ephergent Virtual Modeling Agency</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
 		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='assets/css/main.css') }}">
-		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 		<noscript>
 			<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='assets/css/noscript.css') }}">
 		</noscript>
@@ -26,7 +24,7 @@
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
 							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">Work With Us</a></li>
+							<li><a href="#two">Work with us</a></li>
 							<li><a href="#three">Get in touch</a></li>
 						</ul>
 					</nav>
@@ -43,6 +41,10 @@
 							<p>
 								Shaping Tomorrow's Beauty, Today.
 							</p>
+							<p>ephergent (adj.) - /ɛˈfɜr.dʒənt/
+							A quality or phenomenon that combines the transient nature of ephemeral events
+								with the arising properties of emergent systems.
+							</p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
@@ -55,9 +57,9 @@
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Who we are</h2>
+									<h2>Who We Are</h2>
 									<p>
-										Welcome to Ephergent, where the future of modeling is redefined through cutting-edge technology.
+										Welcome to ephergent, where the future of modeling is redefined through cutting-edge technology.
 										Established at the forefront of the virtual realm, we are pioneers in crafting stunning virtual models using state-of-the-art generative AI techniques.
 									</p>
 <!--									<ul class="actions">-->
@@ -66,19 +68,21 @@
 								</div>
 							</div>
 						</section>
-<!--						-->
-<!--						<section>-->
-<!--							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>-->
-<!--							<div class="content">-->
-<!--								<div class="inner">-->
-<!--									<h2>Feugiat consequat</h2>-->
-<!--									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>-->
-<!--									<ul class="actions">-->
-<!--										<li><a href="generic.html" class="button">Learn more</a></li>-->
-<!--									</ul>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</section>-->
+<!--		model pages				-->
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Tiiu</h2>
+									<p>
+										Tiiu is our first public AI model, she reached 500 followers on Instagram in less than a week with minimal raw organic content.
+									</p>
+									<ul class="actions">
+										<li><a href="{{ url_for('tiiu') }}" class="button">Learn more about Tiiu here</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 <!--						<section>-->
 <!--							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>-->
 <!--							<div class="content">-->
@@ -98,16 +102,24 @@
 						<div class="inner">
 							<h2>Work With Us</h2>
 							<p>
-								Join the revolution in virtual modeling! At Ephergent, we bring your brand to life with our unique approach.
+								Join the revolution in virtual modeling! At ephergent, we bring your brand to life with our unique approach.
                 Collaborate with us to harness the power of generative AI for captivating model generation, virtual photoshoots, and expert consulting services.
 							</p>
 							<div class="features">
+<!--							todo add pages for each service-->
+<!--							Model Generation via Generative AI-->
+<!--							Model Photoshoots via Generative AI-->
+<!--							Consulting Services-->
+<!--							Dynamic Model Collaborations-->
 								<section>
 									<span class="icon solid major fa-image-portrait"></span>
 									<h3>Model Generation via Generative AI</h3>
 									<p>
 										Witness the magic of AI as we create virtual models that transcend imagination. Our advanced generative algorithms bring to life unique and captivating virtual personalities tailored to your brand.
 									</p>
+									<ul class="actions">
+										<li><a href="{{ url_for('index') }}" class="button">Learn more</a></li>
+									</ul>
 								</section>
 								<section>
 									<span class="icon solid major fa-camera"></span>
@@ -115,6 +127,9 @@
 									<p>
 										Immerse yourself in the world of virtual photography. Our generative AI seamlessly captures the essence of your brand, delivering high-quality visuals that resonate with your audience.
 									</p>
+									<ul class="actions">
+										<li><a href="{{ url_for('index') }}" class="button">Learn more</a></li>
+									</ul>
 								</section>
 								<section>
 									<span class="icon solid major fa-desktop"></span>
@@ -122,6 +137,9 @@
 									<p>
 										Navigate the virtual landscape with confidence. Our consulting services provide strategic insights and guidance, ensuring your brand leverages the full potential of virtual models in the ever-evolving digital era.
 									</p>
+									<ul class="actions">
+										<li><a href="{{ url_for('index') }}" class="button">Learn more</a></li>
+									</ul>
 								</section>
 								<section>
 									<span class="icon solid major fa-wand-magic-sparkles"></span>
@@ -129,6 +147,9 @@
 									<p>
 										Break barriers and amplify your brand's narrative through collaborative ventures. Whether with AI or real models, our platform facilitates seamless collaborations, fostering a creative synergy that transcends the boundaries of virtual and reality.
 									</p>
+									<ul class="actions">
+										<li><a href="{{ url_for('index') }}" class="button">Learn more</a></li>
+									</ul>
 								</section>
 <!--								<section>-->
 <!--									<span class="icon solid major fa-link"></span>-->
@@ -141,7 +162,6 @@
 <!--									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>-->
 <!--								</section>-->
 							</div>
-<!--							todo add pages for each service-->
 <!--							<ul class="actions">-->
 <!--								<li><a href="generic.html" class="button">Learn more</a></li>-->
 <!--							</ul>-->
@@ -151,9 +171,9 @@
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Get in touch</h2>
+							<h2>Get In Touch</h2>
 							<p>
-								At Ephergent, we don't just keep up with trends; we set them.
+								At ephergent, we don't just keep up with trends; we set them.
 								Embrace the future of modeling with us, where every pixel tells a story,
 								and every virtual model embodies innovation.
 							</p>
@@ -181,16 +201,16 @@
 								</section>
 								<section>
 									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>P.O. Box 231313<br />
-											Tigard, OR 97281<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:ephergent@gmail.com">ephergent@gmail.com</a>
-										</li>
+<!--										<li>-->
+<!--											<h3>Address</h3>-->
+<!--											<span>P.O. Box 12345<br />-->
+<!--											your city, NY 000001<br />-->
+<!--											USA</span>-->
+<!--										</li>-->
+<!--										<li>-->
+<!--											<h3>Email</h3>-->
+<!--											<a href="mailto:email@gmail.com">email@gmail.com</a>-->
+<!--										</li>-->
 <!--										<li>-->
 <!--											<h3>Phone</h3>-->
 <!--											<span>(000) 000-0000</span>-->
@@ -210,43 +230,25 @@
 							</div>
 						</div>
 					</section>
-
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Ephergent. All rights reserved.</li>
+						<li>&copy; ephergent. All rights reserved.</li>
 <!--						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
 					</ul>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
-			<!-- <script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script> -->
-
 			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
-
-			<!-- <script type="text/javascript" src="{{ url_for('static', filename='assets/js/jquery.poptrox.min.js') }}"></script> -->
-
 			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
-
 			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
-
 			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
-
 			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
-
 			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
-
 			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
-
 	</body>
 </html>
