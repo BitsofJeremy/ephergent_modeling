@@ -38,44 +38,21 @@
 <!--				thumbnail = 360x225-->
 <!--				full = 1200×750-->
 					<section id="thumbnails">
-<!--						image 1-->
-						<article>
-							<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/01.png') }}">
-								<img src="{{ url_for('static', filename='tiiu/images/thumbs/01.png') }}" alt="" />
-							</a>
-<!--							<h2>image title</h2>-->
-<!--							<p>image description.</p>-->
-						</article>
-<!--						image 2-->
-						<article>
-							<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/02.png') }}">
-								<img src="{{ url_for('static', filename='tiiu/images/thumbs/02.png') }}" alt="" />
-							</a>
-<!--							<h2>image title</h2>-->
-<!--							<p>image description.</p>-->
-						</article>
-						<!--						image 3-->
-						<article>
-							<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/03.png') }}">
-								<img src="{{ url_for('static', filename='tiiu/images/thumbs/03.png') }}" alt="" />
-							</a>
-<!--							<h2>image title</h2>-->
-<!--							<p>image description.</p>-->
-						</article>
-						<!--						image 4-->
-						<article>
-							<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/04.png') }}">
-								<img src="{{ url_for('static', filename='tiiu/images/thumbs/04.png') }}" alt="" />
-							</a>
-<!--							<h2>image title</h2>-->
-<!--							<p>image description.</p>-->
-						</article>
+						{% for image in imgs %}
+							<article>
+								<a class="thumbnail" href="{{ url_for('static', filename='tiiu/images/fulls/' + image) }}">
+									<img src="{{ url_for('static', filename='tiiu/images/thumbs/' + image) }}" alt="" />
+								</a>
+							</article>
+						{% endfor %}
 					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; ephergent. All rights reserved.</li>
+							<a href="{{ url_for('index') }}">
+								<li>&copy; ephergent. All rights reserved.</li>
+							</a>
 						</ul>
 					</footer>
 			</div>

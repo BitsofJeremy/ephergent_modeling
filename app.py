@@ -104,12 +104,21 @@ def index():
     )
 
 
-@app.route('/tiiu')
-def tiiu():
+@app.route('/<string:model_name>')
+def models(model_name):
     """
-    Renders Tiiu's model page
+    Renders the model page
     """
-    return render_template('tiiu.html')
+    # Get list of images from full
+    # expected that full and thumb are names the same.
+    # example: '01.png'
+    imgs_path = f'./static/{model_name}/images/fulls'
+    imgs = [f for f in os.listdir(imgs_path) if f.endswith('.png') and os.path.isfile(os.path.join(imgs_path, f))]
+    logger.info(imgs)
+    return render_template(
+        f'{model_name}.html',
+        imgs=imgs
+    )
 
 
 @app.route('/contact', methods=['POST'])

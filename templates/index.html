@@ -70,31 +70,47 @@
 						</section>
 <!--		model pages				-->
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='tiiu/images/fulls/01.png') }}" alt="" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Tiiu</h2>
 									<p>
-										Tiiu is our first public AI model, she reached 500 followers on Instagram in less than a week with minimal raw organic content.
+										Tiiu is our first public AI model, she reached over 500 followers on Instagram in less than a week with minimal raw organic content.
 									</p>
 									<ul class="actions">
-										<li><a href="{{ url_for('tiiu') }}" class="button">Learn more about Tiiu here</a></li>
+										<li><a href="{{ url_for('models', model_name='tiiu') }}" class="button">Learn more about Tiiu here</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
-<!--						<section>-->
-<!--							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>-->
-<!--							<div class="content">-->
-<!--								<div class="inner">-->
-<!--									<h2>Ultricies aliquam</h2>-->
-<!--									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>-->
-<!--									<ul class="actions">-->
-<!--										<li><a href="generic.html" class="button">Learn more</a></li>-->
-<!--									</ul>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</section>-->
+						<section>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='katerina/images/fulls/01.png') }}" alt="" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Kateřina</h2>
+									<p>
+										Kateřina, our latest addition to the roster, poised to captivate the internet with her impending storm of allure.
+									</p>
+									<ul class="actions">
+										<li><a href="{{ url_for('models', model_name='katerina') }}" class="button">Learn more about Kateřina here</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='seraphina/images/fulls/01.png') }}" alt="" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Seraphina</h2>
+									<p>
+										Seraphina, our in-house muse crafted for testing purposes, stands as an exceptionally stunning embodiment of beauty..
+									</p>
+									<ul class="actions">
+										<li><a href="{{ url_for('models', model_name='seraphina') }}" class="button">Learn more about Seraphina here</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 					</section>
 
 				<!-- Two -->
